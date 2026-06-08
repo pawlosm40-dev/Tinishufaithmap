@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="am" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinishu FaithMap - 50 Orthodoxy  Questions</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts for Ethiopic and Modern Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Noto+Sans+Ethiopic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+            background-color: #0B0F17;
+            color: #F3F4F6;
+        }
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1F2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D97706;
+        }
+        .glow-effect {
+            box-shadow: 0 0 20px rgba(217, 119, 6, 0.15);
+        }
+        .glow-green {
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+        .glow-red {
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-500 selection:text-black antialiased">
+
+    <!-- Top Glow Ornament -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-64 bg-gradient-to-b from-amber-500/10 to-transparent blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-[#0B0F17]/80 backdrop-blur-md border-b border-gray-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                    <span class="text-black font-extrabold text-xl tracking-tighter">†</span>
+                </div>
+                <div>
+                    <span class="text-xl font-black bg-gradient-to-r from-white via-gray-200 to-amber-500 bg-clip-text text-transparent tracking-tight block">Tinishu FaithMap</span>
+                    <span class="text-[10px] uppercase tracking-widest text-amber-500/80 font-semibold block -mt-1">Orthodox Doctrine</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-400">
+                <a href="#intro" class="hover:text-amber-400 transition-colors">መግቢያ</a>
+                <a href="#analyzer" class="hover:text-amber-400 transition-colors">መጠይቅ</a>
+                <span class="h-4 w-px bg-gray-800"></span>
+                <div class="bg-gray-900/60 border border-gray-800 px-3 py-1.5 rounded-lg text-xs text-gray-300">
+                    v3.0.0 • 3 Levels
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Workspace -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 relative z-10">
+        
+        <!-- Intro & Hero Section -->
+        <section id="intro" class="mb-12 text-center max-w-3xl mx-auto pt-4">
+            <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full text-xs font-medium mb-6">
+                <span>🛡️</span> <span>የላቀ ባለ 50 ጥያቄዎች አጠቃላይ የእውቀት መመዘኛ</span>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black text-white mb-6 tracking-tight leading-tight">
+                የኦርቶዶክስ ተዋሕዶ <span class="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">እውቀትና ሃይማኖት</span> ያለንን መረዳት የሚፈትን ጥያቄ
+            </h1>
+            <p class="text-gray-400 text-sm sm:text-base leading-relaxed font-light">
+                ይህ ማትሪክስ በ3 ደረጃዎች (ቀላል፣ መካከለኛ፣ ከባድ) የተከፋፈሉ 50 መሠረታዊና ጥልቅ የነገረ መለኮት፣ የሥርዓትና የትውፊት ጥያቄዎችን የያዘ ነው። የራስዎን የዕውቀት ደረጃ ለመለካትና ለማጥራት ስምዎን አስገብተው ይጀምሩ።
+            </p>
+        </section>
+
+        <!-- User Information Input Section -->
+        <section class="max-w-xl mx-auto mb-10">
+            <div class="bg-[#111622] border border-gray-800 rounded-2xl p-6 shadow-xl">
+                <label for="user-full-name" class="block text-sm font-medium text-amber-400 mb-2">ሙሉ ስምዎን ያስገቡ / Enter Your Full Name</label>
+                <div class="relative">
+                    <input type="text" id="user-full-name" placeholder="ለምሳሌ፦ በለጠ ፈንታ" class="w-full bg-[#0B0F17] border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition-colors text-base">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Overview -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            <div class="bg-[#111622] border border-gray-800/60 rounded-2xl p-5 text-center">
+                <div class="text-xs text-gray-500 mb-1">ጠቅላላ ጥያቄዎች</div>
+                <div class="text-2xl font-bold text-white code-font" id="stat-total">50</div>
+            </div>
+            <div class="bg-[#111622] border border-gray-800/60 rounded-2xl p-5 text-center">
+                <div class="text-xs text-gray-500 mb-1">የተመለሱ</div>
+                <div class="text-2xl font-bold text-amber-500 code-font" id="stat-answered">0</div>
+            </div>
+            <div class="bg-[#111622] border border-gray-800/60 rounded-2xl p-5 text-center">
+                <div class="text-xs text-gray-500 mb-1">ትክክለኛ መልስ</div>
+                <div class="text-2xl font-bold text-emerald-500 code-font" id="stat-correct">0</div>
+            </div>
+            <div class="bg-[#111622] border border-gray-800/60 rounded-2xl p-5 text-center">
+                <div class="text-xs text-gray-500 mb-1">የቀረው ጊዜ</div>
+                <div class="text-2xl font-bold text-blue-400 code-font" id="stat-timer">--:--</div>
+            </div>
+        </div>
+
+        <!-- Analyzer & Quiz Engine Section -->
+        <section id="analyzer" class="relative">
+            
+            <!-- Dynamic Quiz Injector Grid -->
+            <div id="quiz-injector" class="space-y-6">
+                <!-- JavaScript automatically injects structural components here -->
+            </div>
+
+            <!-- Global Actions Core Button -->
+            <div class="mt-12 text-center" id="action-zone">
+                <button onclick="evaluateUserMetrics()" id="submit-matrix-btn" class="inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-yellow-500 text-black font-bold text-base px-10 py-4 rounded-xl shadow-xl shadow-amber-950/40 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer w-full sm:w-auto">
+                    <span>አስተምህሮውን አረጋግጥ</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+
+            <!-- Dynamic Advanced Scoreboard Analytics Dashboard -->
+            <div id="analytics-dashboard" class="mt-16 bg-[#111622] border border-gray-800 rounded-3xl p-6 sm:p-10 hidden transition-all duration-700 glow-effect">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <div class="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-amber-500/10 text-amber-500 border border-amber-500/30 text-3xl font-black mb-4" id="dashboard-icon">
+                        📊
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-2">የእውቀት ትንተና ዳሽቦርድ</h2>
+                    <p class="text-sm text-gray-400" id="dashboard-user-greeting">ውጤት</p>
+                </div>
+
+                <!-- Metrics Grid Splitter -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                    <!-- Gauge 1: Main Score -->
+                    <div class="bg-[#0B0F17]/60 border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                        <span class="text-xs uppercase font-bold text-gray-500 tracking-wider block mb-4">አጠቃላይ ውጤት</span>
+                        <div class="relative inline-flex items-center justify-center mx-auto mb-4">
+                            <span class="text-5xl font-black text-white code-font" id="score-percent">0%</span>
+                        </div>
+                        <p class="text-sm text-gray-300 font-medium" id="score-raw-text">ከ 50 ጥያቄዎች 0 መልሰዋል።</p>
+                    </div>
+
+                    <!-- Gauge 2: Badges & Rank -->
+                    <div class="bg-[#0B0F17]/60 border border-gray-800 rounded-2xl p-6 text-center flex flex-col justify-between">
+                        <span class="text-xs uppercase font-bold text-gray-500 tracking-wider block mb-4">የዕውቀት ማዕረግ</span>
+                        <div class="py-4">
+                            <div class="text-3xl mb-2" id="badge-emoji">📚</div>
+                            <div class="text-xl font-bold text-amber-400" id="badge-title">ጀማሪ መርማሪ</div>
+                        </div>
+                        <p class="text-xs text-gray-400" id="badge-desc">መሠረታዊ የሆኑ ትምህርቶችን በደንብ መለየትና ማጥናት ያስፈልግዎታል።</p>
+                    </div>
+
+                    <!-- Gauge 3: Categorized Bars -->
+                    <div class="bg-[#0B0F17]/60 border border-gray-800 rounded-2xl p-6 flex flex-col justify-between">
+                        <span class="text-xs uppercase font-bold text-gray-500 tracking-wider block mb-3 text-center">የይዘት ክፍፍል ትንተና</span>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-400">ትምህርተ ዶግማ (Dogma)</span>
+                                    <span class="text-white font-bold code-font" id="cat-dogma-val">0%</span>
+                                </div>
+                                <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden">
+                                    <div id="cat-dogma-bar" class="bg-amber-500 h-full rounded-full transition-all duration-1000" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-400">ሥርዓተ ቤተክርስቲያን (Canon)</span>
+                                    <span class="text-white font-bold code-font" id="cat-canon-val">0%</span>
+                                </div>
+                                <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden">
+                                    <div id="cat-canon-bar" class="bg-blue-500 h-full rounded-full transition-all duration-1000" style="width: 0%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs mb-1">
+                                    <span class="text-gray-400">ትውፊትና ታሪክ (Tradition)</span>
+                                    <span class="text-white font-bold code-font" id="cat-trad-val">0%</span>
+                                </div>
+                                <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden">
+                                    <div id="cat-trad-bar" class="bg-purple-500 h-full rounded-full transition-all duration-1000" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Restart Interactive Module Button -->
+                <div class="text-center border-t border-gray-800/80 pt-8">
+                    <button onclick="rebootAnalyzerEngine()" class="bg-gray-800 hover:bg-gray-700 text-white font-bold px-8 py-3.5 rounded-xl text-sm transition-all shadow hover:shadow-lg cursor-pointer">
+                        ማትሪክሱን እንደገና አስጀምር
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer System Container -->
+    <footer class="bg-[#070A10] border-t border-gray-900 py-10 mt-20 relative z-10 text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-gray-400">Tinishu FaithMap</span>
+                <span>•student</span>
+            </div>
+            <div>
+                <p>© 2026 Tinishu FaithMap Core. ለመማሪያና ማስተማሪያነት በነፃ የተዘጋጀ።</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic Module Script Javascript -->
+    <script>
+        const TELEGRAM_BOT_TOKEN = '8289930496:AAHKqEPvRYaGQfRfsCjSBbyk-53dqzzzu0s'; 
+        const TELEGRAM_CHAT_ID = '7388335181';
+
+        // 50 Questions Repository structured by 3 Difficulty Levels
+        const matrixRepository = [
+            // ==========================================
+            // LEVEL 1: EASY (ቀላል) - Q1 to Q20
+            // ==========================================
+            {
+                id: 1, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የቅዱሳን መላእክት ተፈጥሮአዊ ባሕርይ ምንድን ነው?",
+                options: [
+                    { text: "ከአፈርና ከውኃ የተፈጠሩ የሚታዩ ግዙፍ ፍጥረታት ናቸው።", isCorrect: false },
+                    { text: "ከእሳትና ከነፋስ (ረቂቅ ባሕርይ) የተፈጠሩ፣ የማይሞቱና የማይጋቡ መናፍስት ናቸው።", isCorrect: true },
+                    { text: "ራሳቸውን መለወጥ የማይችሉ የሰው ልጅ አእምሮ ውጤቶች ናቸው።", isCorrect: false }
+                ],
+                explanation: "መላእክት እግዚአብሔር በመጀመሪያው ቀን (እሑድ) ከእሳትና ከነፋስ የፈጠራቸው ረቂቃን መናፍስት ናቸው (መዝ 103:4)።"
+            },
+            {
+                id: 2, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን ስለ ቅድስት ማርያም ድንግልና የምታስተምረው መሠረታዊ ዶግማ የቱ ነው?",
+                options: [
+                    { text: "ከመውለዷ በፊት ብቻ ድንግል ነበረች።", isCorrect: false },
+                    { text: "ከመውለድ በፊት፣ በጊዜ መውለድ፣ ከወለደችም በኋላ ዘላለም ድንግል (ድንግል በሕሊና ወበሥጋ) ናት።", isCorrect: true },
+                    { text: "ድንግልናዋ መንፈሳዊ ብቻ እንጂ ሥጋዊ አይደለም።", isCorrect: false }
+                ],
+                explanation: "እመቤታችን ቅድስት ድንግል ማርያም 'አዘቅት እጽውት' (የተዘጋ ምንጭ) ትባላለች፤ ዘላለም ድንግል ናት (ሕዝ 44:2)።"
+            },
+            {
+                id: 3, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "በኦርቶዶክስ ሥርዓት መሠረት ወንድ ልጅ ከተወለደ በስንተኛው ቀን ይጠመቃል?",
+                options: [
+                    { text: "በ 30 ቀን", isCorrect: false },
+                    { text: "በ 40 ቀን", isCorrect: true },
+                    { text: "በ 80 ቀን", isCorrect: false }
+                ],
+                explanation: "በሌዋውያን ሕግ መሠረት ወንድ ልጅ በ40 ቀን፣ ሴት ልጅ በ80 ቀን ወደ እግዚአብሔር ቤት በመግባት የጥምቀት ጸጋን ያገኛሉ (ሌዋ 12:2-5)።"
+            },
+            {
+                id: 4, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "በየሳምንቱ ያለ ማቋረጥ ልንጾማቸው የሚገቡ የዓዋጅ ቀናት የትኞቹ ናቸው?",
+                options: [
+                    { text: "ሰኞና ሐሙስ", isCorrect: false },
+                    { text: "ረቡዕና ዓርብ (ከበዓለ ሃምሳ በስተቀር)", isCorrect: true },
+                    { text: "ቅዳሜና እሑድ", isCorrect: false }
+                ],
+                explanation: "ረቡዕ ጌታ የተያዘበትና የተመከረበት፣ ዓርብ ደግሞ የተሰቀለበት ቀን በመሆኑ ይጾማሉ።"
+            },
+            {
+                id: 5, level: "Easy", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን የመጀመሪያው ሀገር በቀል ፓትርያርክ ማናቸው?",
+                options: [
+                    { text: "አቡነ ፍሬምናጦስ", isCorrect: false },
+                    { text: "አቡነ ባስልዮስ", isCorrect: true },
+                    { text: "አቡነ ተክለ ሃይማኖት", isCorrect: false }
+                ],
+                explanation: "እስከ 1951 ዓ.ም የነበሩት ጳጳሳት ከግብፅ ይመጡ የነበረ ሲሆን፣ የመጀመሪያው ኢትዮጵያዊ ፓትርያርክ አቡነ ባስልዮስ ናቸው።"
+            },
+            {
+                id: 6, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "አምላክ ሰው የሆነበት (ሥጋዌ) ዋና ዓላማ ምንድን ነው?",
+                options: [
+                    { text: "እኛን ከኃጢአትና ከሞት ባርነት አድኖ ወደ ቀደመ ክብራችን ለመመለስ።", isCorrect: true },
+                    { text: "ምድራዊ መንግሥትን አቋቁሞ እስራኤላውያንን ለመርዳት።", isCorrect: false },
+                    { text: "አዲስ የሕግ መጽሐፍ ለሰዎች ለመስጠት ብቻ።", isCorrect: false }
+                ],
+                explanation: "እግዚአብሔር ዓለምን እንዲሁ ወዷልና፤ በበደላችን ምክንያት የመጣውን የሞት ፍርድ በሥጋው ተቀብሎ እኛን ለማዳን ሰው ሆነ (ዮሐ 3:16)።"
+            },
+            {
+                id: 7, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "ስለ ምሥጢረ ጥምቀት ትክክለኛ ያልሆነው አባባል የቱ ነው?",
+                options: [
+                    { text: "ጥምቀት የአዲስ ሕይወት መጀመሪያና የሥላሴ ልጅነት መገኛ ነው።", isCorrect: false },
+                    { text: "አንድ ሰው በተለያየ ምክንያት በተደጋጋሚ ሊጠመቅ ይችላል።", isCorrect: true },
+                    { text: "ጥምቀት የሚፈጸመው በውኃ ውስጥ በመጠለቅ (በመጥለቅ) ነው።", isCorrect: false }
+                ],
+                explanation: "አስተምህሮው 'አንዲት ጥምቀት' (ኤፌ 4:5) ይላል። ጥምቀት ዳግም አይደገምም።"
+            },
+            {
+                id: 8, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የቤተክርስቲያን ከፍተኛው የውሳኔ ሰጪ አካል (ጉባኤ) ምን ይባላል?",
+                options: [
+                    { text: "ሰንበት ትምህርት ቤት", isCorrect: false },
+                    { text: "ቅዱስ ሲኖዶስ", isCorrect: true },
+                    { text: "አህጉረ ስብከት", isCorrect: false }
+                ],
+                explanation: "የሐዋርያትን አርአያ በመከተል የቤተክርስቲያንን አስተዳደራዊና ቀኖናዊ ውሳኔዎች የሚወስነው የሊቃነ ጳጳሳት ስብስብ 'ቅዱስ ሲኖዶስ' ይባላል።"
+            },
+            {
+                id: 9, level: "Easy", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "ማንኛውም የቅዱስ ቍርባን አገልግሎት የሚፈጸምበት የተቀደሰ ዕቃ ምን ይባላል?",
+                options: [
+                    { text: "ታቦትና መንበር", isCorrect: true },
+                    { text: "ዕጣንና ጽናሕ", isCorrect: false },
+                    { text: "መቋሚያና ከበሮ", isCorrect: false }
+                ],
+                explanation: "ያለ ታቦትና መንበር ቅዱስ ቍርባን ሊቀደስና ሊፈተት አይችልም።"
+            },
+            {
+                id: 10, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በነገረ ማርያም አስተምህሮ 'ወላዲተ አምላክ' (Theotokos) ማለት ምን ማለት ነው?",
+                options: [
+                    { text: "የክርስቶስን ሰብአዊ አካል ብቻ የወለደች ማለት ነው።", isCorrect: false },
+                    { text: "የአምላክ እናት / አምላክን በሥጋ የወለደች ማለት ነው።", isCorrect: true },
+                    { text: "የመላእክት እህት ማለት ነው።", isCorrect: false }
+                ],
+                explanation: "በኤፌሶን ጉባኤ የጸናው ዶግማ ድንግል ማርያም የማትለወጥና የማይከፈል ፍጹም አምላክ የሆነውን አካላዊ ቃልን በሥጋ ስለወለደች 'ወላዲተ አምላክ' ትባላለች።"
+            },
+            {
+                id: 11, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "ምእመናን በጾም ወቅት ከምን ዓይነት ምግቦች መከልከል አለባቸው?",
+                options: [
+                    { text: "ከእህልና ከውኃ ብቻ", isCorrect: false },
+                    { text: "ከእንስሳት ተዋጽኦ (ሥጋ፣ ወተት体制፣ ቅቤ፣ ዕንቁላል) እና ለተወሰነ ሰዓት ከመብላት", isCorrect: true },
+                    { text: "ከተበላሹ ምግቦች ብቻ", isCorrect: false }
+                ],
+                explanation: "ጾም ማለት ፈቃደ ሥጋን ለመግታት ለተወሰነ ሰዓት መከልከልና የእንስሳት ተዋጽኦ የሌላቸውን ምግቦች መመገብ ነው።"
+            },
+            {
+                id: 12, level: "Easy", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "የላሊበላ ውቅር አብያተ ክርስቲያናትን ያነጸው ታዋቂው ንጉሥ ማን ይባላል?",
+                options: [
+                    { text: "ንጉሥ ካሌብ", isCorrect: false },
+                    { text: "ቅዱስ ላሊበላ", isCorrect: true },
+                    { text: "አጼ ዘርአ ያዕቆብ", isCorrect: false }
+                ],
+                explanation: "ንጉሥ ቅዱስ ላሊበላ በ12ኛው/13ኛው ክፍለ ዘመን 11ዱን ድንቅ ውቅር አብያተ ክርስቲያናት አንጿል።"
+            },
+            {
+                id: 13, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የመጀመሪያው ሰው አዳም የተፈጠረው ከምንድን ነው?",
+                options: [
+                    { text: "ከምድር አፈር (በእግዚአብሔር እጅና እስትንፋስ)", isCorrect: true },
+                    { text: "ከመላእክት ብርሃን", isCorrect: false },
+                    { text: "በዝግመተ ለውጥ (Evolution)", isCorrect: false }
+                ],
+                explanation: "እግዚአብሔር አምላክ ሰውን ከምድር አፈር አበጀው፤ በአፍንጫውም የሕይወት እስትንፋስን እፍ አለበት (ዘፍ 2:7)።"
+            },
+            {
+                id: 14, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የአንድ ክርስቲያን የንስሐ አባት ዋና ተግባር ምንድን ነው?",
+                options: [
+                    { text: "የምክር አገልግሎት መስጠትና ንስሐን ተቀብሎ በእግዚአብሔር ሥልጣን መፍታት/ማሰር", isCorrect: true },
+                    { text: "ምድራዊ ብድር ማበደር", isCorrect: false },
+                    { text: "ስም ማውጣት ብቻ", isCorrect: false }
+                ],
+                explanation: "የንስሐ አባት ምእመናንን በመንፈሳዊ ሕይወት መምራትና የፍትሐት ሥልጣንን መተግበር ነው።"
+            },
+            {
+                id: 15, level: "Easy", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "የቅዱስ ያሬድ መጻሕፍት (የዜማ ዓይነቶች) ስንት ናቸው?",
+                options: [
+                    { text: "5 መጻሕፍት (ድጓ፣ ጾመ ድጓ፣ ዝማሬ፣ መዋሥዕት、ቅዳሴ)", isCorrect: true },
+                    { text: "2 መጻሕፍት ብቻ", isCorrect: false },
+                    { text: "7 መጻሕፍት", isCorrect: false }
+                ],
+                explanation: "ቅዱስ ያሬድ የደረሳቸው 5 ዋና መንፈሳዊ የዜማ መጻሕፍት አሉ።"
+            },
+            {
+                id: 16, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በመለኮት አስተምህሮ 'አብ' የወልድ ምንድን ነው?",
+                options: [
+                    { text: "ፈጣሪው ነው", isCorrect: false },
+                    { text: "አባቱ ነው (ወልድ ከአብ ዘላለም ተወልዷል)", isCorrect: true },
+                    { text: "ታላቅ ወንድሙ ነው", isCorrect: false }
+                ],
+                explanation: "አብ ወላዲ ነው፤ ወልድ ተወላዲ ነው። ይህ የአካል እንጂ የባሕርይ ወይም የጊዜ መቅደም አይደለም።"
+            },
+            {
+                id: 17, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የቅዱስ ቍርባን ሥጋና ደም ከመቀበላችን በፊት ምን ያህል ሰዓት መጾም (አፍን መያዝ) ያስፈልጋል?",
+                options: [
+                    { text: "3 ሰዓት", isCorrect: false },
+                    { text: "9 ሰዓት", isCorrect: true },
+                    { text: "24 ሰዓት", isCorrect: false }
+                ],
+                explanation: "በቀኖና ቤተክርስቲያን መሠረት ለቍርባን የሚዘጋጅ ሰው ቢያንስ የ9 ሰዓት ጥንቅቅ ያለ ጾም ሊኖረው ይገባል።"
+            },
+            {
+                id: 18, level: "Easy", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "ክርስትና ወደ ኢትዮጵያ በይፋ የገባውና የመጀመሪያው ኤጲስ ቆጶስ አቡነ ሰላማ (ፍሬምናጦስ) የተሾሙት በስንተኛው መቶ ክፍለ ዘመን ነው?",
+                options: [
+                    { text: "በ 1ኛው መቶ ክፍለ ዘመን", isCorrect: false },
+                    { text: "በ 4ኛው መቶ ክፍለ ዘመን (በነገሥታት ኢዛናና ሳይዛና ዘመን)", isCorrect: true },
+                    { text: "በ 10ኛው መቶ ክፍለ ዘመን", isCorrect: false }
+                ],
+                explanation: "በ4ኛው መቶ ክፍለ ዘመን ክርስትና የሀገሪቱ ብሔራዊ ሃይማኖት ሆኖ ታውጇል።"
+            },
+            {
+                id: 19, level: "Easy", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በምስጢረ ሥላሴ አስተምህሮ የመንፈስ ቅዱስ ግብር ምንድን ነው?",
+                options: [
+                    { text: "መወለድ", isCorrect: false },
+                    { text: "መስረጽ (ሠራፂ - ከአብ የሰረጸ)", isCorrect: true },
+                    { text: "መፍጠር ብቻ", isCorrect: false }
+                ],
+                explanation: "አብ አዋጭ/ወላዲ፣ ወልድ ተወላዲ፣ መንፈስ ቅዱስ ደግሞ ሠራፂ (ከአብ የሚሰርጽ) ነው (ዮሐ 15:26)።"
+            },
+            {
+                id: 20, level: "Easy", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የቤተክርስቲያን ታላቁ የጸሎትና የቅዳሴ መጽሐፍ ምን ይባላል?",
+                options: [
+                    { text: "መጽሐፈ ቅዳሴ", isCorrect: true },
+                    { text: "መጽሐፈ ግንዘት", isCorrect: false },
+                    { text: "ፍትሐ ነገሥት", isCorrect: false }
+                ],
+                explanation: "ኅብስቱና ወይኑ ወደ እውነተኛው የክርስቶስ ሥጋና ደም የሚለወጥበት የጋራ አምልኮ ጸሎት 'መጽሐፈ ቅዳሴ' ይባላል።"
+            },
+
+            // ==========================================
+            // LEVEL 2: MEDIUM (መካከለኛ) - Q21 to Q40
+            // ==========================================
+            {
+                id: 21, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የጌታችን የኢየሱስ ክርስቶስን 'ሁለት ባሕርይ' (Nestorianism) ያስተማረውና በጉባኤ ኤፌሶን የተወገዘው መናፍቅ ማን ነው?",
+                options: [
+                    { text: "አርዮስ", isCorrect: false },
+                    { text: "ንስጥሮስ", isCorrect: true },
+                    { text: "መቅዶንዮስ", isCorrect: false }
+                ],
+                explanation: "ንስጥሮስ ክርስቶስን ሁለት አካል ሁለት ባሕርይ ብሎ በመክፈሉ በ431 ዓ.ም በኤፌሶን ጉባኤ ተወግዟል።"
+            },
+            {
+                id: 22, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "ከሰባቱ ምሥጢራተ ቤተክርስቲያን መካከል የማይደገሙት (አንድ ጊዜ ብቻ የሚፈጸሙት) የትኞቹ ናቸው?",
+                options: [
+                    { text: "ጥምቀት፣ ሜሮንና ክህነት", isCorrect: true },
+                    { text: "ንስሐና ቍርባን", isCorrect: false },
+                    { text: "ተክሊልና ቀንዲል", isCorrect: false }
+                ],
+                explanation: "ጥምቀት፣ ሜሮንና ክህነት በሰው ሕይወት ውስጥ የማይደገሙ ማኅተሞች ናቸው።"
+            },
+            {
+                id: 23, level: "Medium", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን የምትከተለው የዘመን አቆጣጠር (calendar) መሠረቱ ማነው?",
+                options: [
+                    { text: "የአቡሻኽር (ዲሜጥሮስ) ስሌት", isCorrect: true },
+                    { text: "የጎርጎርዮስ አቆጣጠር", isCorrect: false },
+                    { text: "የባቢሎን ፈለክ", isCorrect: false }
+                ],
+                explanation: "የእክንድርያው ሊቅ ዲሜጥሮስ በሠራው አቡሻኽር መሠረት የበዓላትና አጽዋማት ማውጫ ስሌት ይሠራል::"
+            },
+            {
+                id: 24, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የእግዚአብሔር 'ፈቃድ' እና 'ህልውና' በተዋሕዶ ክርስቶስ ውስጥ እንዴት ይገለጻል?",
+                options: [
+                    { text: "ሁለት ተቃራኒ ፈቃድና ሁለት ግብር ነበረው።", isCorrect: false },
+                    { text: "ከተዋሕዶ በኋላ ክርስቶስ አንድ አካል፣ አንድ ባሕርይና አንድ መለኮታዊ ሰብአዊ ፈቃድ አለው።", isCorrect: true },
+                    { text: "ሰብአዊ ፈቃዱ ሙሉ በሙሉ ጠፍቷል።", isCorrect: false }
+                ],
+                explanation: "ይህ 'ሚaphysitism' (ተዋሕዶ) ይባላል፤ መለኮትና ትስብእት በአንድ ፈቃድና ግብር ይንቀሳቀሳሉ እንጂ አይከፈሉም።"
+            },
+            {
+                id: 25, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "በቅዳሴ ጊዜ 'አንብሮ ዕድ' (እጅ መጫን) ሥልጣን ያለው የማን ብቻ ነው?",
+                options: [
+                    { text: "የሊቀ ዲያቆናት", isCorrect: false },
+                    { text: "የጳጳስ / የሊቀ ጳጳስ (የክህነት ሥልጣን ለማስተላለፍ)", isCorrect: true },
+                    { text: "የማንኛውም ቆሞስ", isCorrect: false }
+                ],
+                explanation: "ሐዋርያዊ የክህነት ሥልጣንን በዕድ መጫን የማስተላለፍ መብት የኤጲስ ቆጶሳት (ጳጳሳት) ብቻ ነው።"
+            },
+            {
+                id: 26, level: "Medium", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "በ16ኛው ክፍለ ዘመን በግራኝ አህመድ ወረራ ወቅት የጠፉትን አብያተ ክርስቲያናትና ሥርዓቶች ለመተካት ከፍተኛ ተሐድሶ ያደረጉት ንጉሥ ማናቸው?",
+                options: [
+                    { text: "አጼ ቴዎድሮስ", isCorrect: false },
+                    { text: "አጼ ዘርአ ያዕቆብ", isCorrect: false },
+                    { text: "አጼ ፋሲለደስ (ከካቶሊክ ተጽዕኖ በኋላ ኦርቶዶክስን የመለሱ)", isCorrect: true }
+                ],
+                explanation: "አጼ ፋሲለደስ የጎንደርን ሥልጣኔ የጀመሩና የኦርቶዶክስን ሥርዓት ከመጻተኞች ተጽዕኖ የመለሱ መሪ ናቸው።"
+            },
+            {
+                id: 27, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በኦርቶዶክስ አስተምህሮ 'የመጀመሪያው በደል' (Original Sin) በሰው ልጆች ላይ ምን አስከተለ?",
+                options: [
+                    { text: "የሞትና የኮነኔ ፍርድ ወደ ሰው ሁሉ ተላለፈ (የባሕርይ መበላሸት)" , isCorrect: true },
+                    { text: "ሰዎች ሁሉ በቀጥታ ወደ ገሃነም እንዲገቡ ብቻ አደረገ እንጂ ባሕርይ አልተለወጠም።", isCorrect: false },
+                    { text: "ምንም ዓይነት ተጽዕኖ አላመጣም።", isCorrect: false }
+                ],
+                explanation: "በአዳም ምክንያት ሞት በሰው ሁሉ ላይ ነገሠ፤ ክርስቶስ በሞቱ ይህንን የባሕርይ እዳ ከፈለው (ሮሜ 5:12)።"
+            },
+            {
+                id: 28, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "በቀኖና ቤተክርስቲያን መሠረት 'አጋንንት የተጠናወተው' ወይም 'የባዕድ አምልኮ' የነበረበት ሰው ከመቁረቡ በፊት ምን መደረግ አለበት?",
+                options: [
+                    { text: "የጸሎተ ፍትሐትና የጥምቀት ጸጋ (የማዕሰር መፍቻ ጸሎት/ጸበል) ማግኘት አለበት", isCorrect: true },
+                    { text: "ቀጥታ መቁረብ ይችላል", isCorrect: false },
+                    { text: "ከቤተክርስቲያን ሙሉ በሙሉ መባረር አለበት", isCorrect: false }
+                ],
+                explanation: "እንዲህ ዓይነቱ ሰው በቃለ እግዚአብሔርና በጸበል ጸሎት ነጽቶ በንስሐ መምጣት አለበት።"
+            },
+            {
+                id: 29, level: "Medium", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "የቅዱስ ቃል ኪዳን ታቦት ወደ ኢትዮጵያ የመጣው በምን ምክንያት ነው?",
+                options: [
+                    { text: "በቀዳማዊ ምኒልክ (በንጉሥ ሰሎሞን ልጅ) አማካኝነት ከኢየሩሳሌም", isCorrect: true },
+                    { text: "በአቡነ ተክለ ሃይማኖት ጸሎት", isCorrect: false },
+                    { text: "በግብፅ ጳጳሳት ስጦታ", isCorrect: false }
+                ],
+                explanation: "በትውፊት መሠረት ቀዳማዊ ምኒልክ ከአባቱ ከሰሎሞን ዘንድ ሲመለስ ታቦተ ጽዮንን ይዞ መጥቷል (ክብረ ነገሥት)።"
+            },
+            {
+                id: 30, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "ክርስቶስ በሲኦል ለነበሩት ነፍሳት 'የድኅነት ስብከት' የሰበከው መቼ ነው?",
+                options: [
+                    { text: "ከትንሣኤው በኋላ በምድር ላይ እያለ", isCorrect: false },
+                    { text: "ነፍሱ ከሥጋው ተለይታ በነበረችበት ጊዜ (በዕለተ ዓርብ በፈቃዱ ወደ ሲኦል ወርዶ)", isCorrect: true },
+                    { text: "ከማረጉ ጥቂት ቀናት በፊት", isCorrect: false }
+                ],
+                explanation: "በሥጋው መቃብር ሲወርድ፣ በነፍሱ ግን ወደ ሲኦል ወርዶ ምርኮን ማረከ፣ ነፍሳትንም አወጣ (1ጴጥ 3:19)።"
+            },
+            {
+                id: 31, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የማይፈርስና የጸና የኦርቶዶክስ 'ምሥጢረ ተክሊል' (ጋብቻ) መሠረታዊ ሕግ ምንድን ነው?",
+                options: [
+                    { text: "አንድ ወንድ ለአንዲት ሴት ብቻ (Monogamy) እና ፍቺ የማይፈቀድበት መሆን", isCorrect: true },
+                    { text: "በሁለቱም ወገን ስምምነት በማንኛውም ጊዜ መፍረስ የሚችል ጋብቻ", isCorrect: false },
+                    { text: "የባለብዙ ሚስት ሥርዓት", isCorrect: false }
+                ],
+                explanation: "እግዚአብሔር ያጣመረውን ሰው አይለየውም (ማቴ 19:6)። ጋብቻ በዝሙት ምክንያት ካልሆነ አይፈርስም።"
+            },
+            {
+                id: 32, level: "Medium", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "በአንድ ዓመት ውስጥ በኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን የሚቀደሱ የቅዳሴ ዓይነቶች (አናፎራ) ስንት ናቸው?",
+                options: [
+                    { text: "14 የቅዳሴ ዓይነቶች", isCorrect: true },
+                    { text: "4 የቅዳሴ ዓይነቶች ብቻ", isCorrect: false },
+                    { text: "24 የቅዳሴ ዓይነቶች", isCorrect: false }
+                ],
+                explanation: "ቤተክርስቲያናችን የተለያዩ የቅዱሳን ሊቃውንት የተለዩ ምስጋናዎችን ያካተቱ 14 ድንቅ ቅዳሴዎችን ትጠቀማለች።"
+            },
+            {
+                id: 33, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "መንፈስ ቅዱስ 'ሕይወት ሰጪ' (Life-giver) እና ከአብ የሰረጸ አምላክ መሆኑን በመካድ በቁስጥንጥንያ ጉባኤ የተወገዘው ማን ነው?",
+                options: [
+                    { text: "መቅዶንዮስ", isCorrect: true },
+                    { text: "አውጣኪ", isCorrect: false },
+                    { text: "ሰባልዮስ", isCorrect: false }
+                ],
+                explanation: "መቅዶንዮስ መንፈስ ቅዱስ ፍጡር ነው በማለቱ በ381 ዓ.ም በቁስጥንጥንያ በ150 ሊቃውንት ተወግዟል።"
+            },
+            {
+                id: 34, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "በኦርቶዶክስ አብያተ ክርስቲያናት ውስጥ 'ቅድስተ ቅዱሳን' (Sanctuary) የሚባለው ክፍል ማን ብቻ ነው የሚገባበት?",
+                options: [
+                    { text: "የሰንበት ትምህርት ቤት ተማሪዎች", isCorrect: false },
+                    { text: "ሥልጣነ ክህነት ያላቸው (ቄስ፣ ዲያቆን፣ ጳጳስ) በንጽሕና ሆነው ብቻ", isCorrect: true },
+                    { text: "ማንኛውም መዋጮ የከፈለ ምእመን", isCorrect: false }
+                ],
+                explanation: "ቅድስተ ቅዱሳን የታቦቱ ማደሪያ በመሆኑ ያለ መንፈሳዊ ሥልጣንና ንጽሕና መግባት ፈጽሞ የተከለከለ ነው።"
+            },
+            {
+                id: 35, level: "Medium", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "ወደ ኢትዮጵያ መጥተው ምንኩስናንና ትምህርትን ያስፋፉት 'ዘጠኙ ቅዱሳን' የመጡት ከየት ነው?",
+                options: [
+                    { text: "ከሮምና ከተለያዩ የሶርያ/እስያ አካባቢዎች (በኬልቄዶን ጉባኤ ምክንያት)", isCorrect: true },
+                    { text: "ከሩቅ ምስራቅ ቻይና", isCorrect: false },
+                    { text: "ከደቡብ አፍሪካ", isCorrect: false }
+                ],
+                explanation: "ዘጠኙ ቅዱሳን በ5ኛው ክፍለ ዘመን የኬልቄዶንን ጉባኤ ተቃውመው ወደ አክሱም በመምጣት ገዳማዊ ሕይወትን አስፋፍተዋል።"
+            },
+            {
+                id: 36, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በኦርቶዶክስ እምነት 'ጽድቅ' በምን ይገኛል?",
+                options: [
+                    { text: "በእምነት ብቻ (Sola Fide)", isCorrect: false },
+                    { text: "በቀጥተኛ እምነትና እምነቱ በሚገልጠው በበጎ ሥራ (ፍቅር) አስተባብሮ በመያዝ", isCorrect: true },
+                    { text: "ያለ እምነት በሥራ ብቻ", isCorrect: false }
+                ],
+                explanation: "ያለ ሥራ እምነት የሞተ ነው፤ እውነተኛ እምነት በበጎ ሥራና በፍቅር መገለጥ አለበት (ያዕ 2:26)።"
+            },
+            {
+                id: 37, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የ'ምሥጢረ ሜሮን' ዋና መንፈሳዊ ፋይዳ ምንድን ነው?",
+                options: [
+                    { text: "የመንፈስ ቅዱስ ስጦታና ማኅተም በሰውየው ላይ ማሳደር (ከጥምቀት በኋላ)", isCorrect: true },
+                    { text: "ኃጢአትን መสารዝ ብቻ", isCorrect: false },
+                    { text: "ለሕመምተኞች ፈውስ መስጠት", isCorrect: false }
+                ],
+                explanation: "ሜሮን የክርስቲያን ሕይወት ማኅተምና የመንፈስ ቅዱስ ሀብት ማግኛ ቅዱስ ዘይት ነው::"
+            },
+            {
+                id: 38, level: "Medium", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "በአጼ ዘርአ ያዕቆብ ዘመን የተነሱትና 'ለታቦትና ለድንግል ማርያም አንሰግድም' በማለታቸው የተከራከሩት መነኮሳት ወገን ማን ይባላሉ?",
+                options: [
+                    { text: "ደቂቀ እስጢፋኖስ (እስጢፋኖሳውያን)", isCorrect: true },
+                    { text: "የደብረ ሊባኖስ መነኮሳት", isCorrect: false },
+                    { text: "ደቂቀ ኤዎስጣቴዎስ", isCorrect: false }
+                ],
+                explanation: "ደቂቀ እስጢፋኖስ በ15ኛው ክፍለ ዘመን ከንጉሡ ጋር በነገረ ማርያምና በሥርዓት ላይ ከፍተኛ ክርክር ያደረጉ ወገኖች ናቸው።"
+            },
+            {
+                id: 39, level: "Medium", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የክርስቶስ አካል የሆኑ ምእመናን ስብስብ (ኅብረት) ምን ተብላ ትጠራለች?",
+                options: [
+                    { text: "ቅድስት ቤተክርስቲያን (አንዲት፣ ቅድስት፣ ጉባኤያዊትና ሐዋርያዊት)", isCorrect: true },
+                    { text: "ምኩራብ ብቻ", isCorrect: false },
+                    { text: "ማኅበረ ቅዱሳን ብቻ", isCorrect: false }
+                ],
+                explanation: "ቤተክርስቲያን ማለት የክርስቶስ አካል፣ እርሱም ራሷ የሆነላት የነገደ ክርስቲያን ኅብረት ናት (ኤፌ 1:22)።"
+            },
+            {
+                id: 40, level: "Medium", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "በቀኖና ቤተክርስቲያን መሠረት 'የማይጾሙ' (የጾም ፍቺ ያላቸው) ሁለቱ ቀናት የትኞቹ ናቸው?",
+                options: [
+                    { text: "ቅዳሜና እሑድ (ከዐቢይ ጾም ቅዳሜ በስተቀር ጥንቅቅ ብለው አይጾሙም/አይሰገዱም)", isCorrect: true },
+                    { text: "ሰኞና ማክሰኞ", isCorrect: false },
+                    { text: "ሐሙስና ዓርብ", isCorrect: false }
+                ],
+                explanation: "ቅዳሜና እሑድ የዕረፍትና የትንሣኤ ቀናት በመሆናቸው ስግደትና ጥንቅቅ ያለ (የሰዓት) ጾም የለባቸውም።"
+            },
+
+            // ==========================================
+            // LEVEL 3: HARD (ከባድ) - Q41 to Q50
+            // ==========================================
+            {
+                id: 41, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በኦርቶዶክስ ተዋሕዶ ረቂቅ ነገረ መለኮት 'ተዋሕዶ የባሕርይ ነው' (Hypostatic Union) ሲባል ትክክለኛው ትርጉም ምንድን ነው?",
+                options: [
+                    { text: "መለኮትና ሥጋ ከተዋሐዱ በኋላ የየራሳቸውን የተለያየ ባሕርይ ይዘው በተጓዳኝ ይኖራሉ።", isCorrect: false },
+                    { text: "የመለኮትና የትስብእት ባሕርያት ያለ መቀላቀልና ያለ መለወጥ በአንድ አካልና በአንድ የማይከፈል ባሕርይ ጸንተዋል፤ ክርስቶስ አንድ ባሕርይ ነው።", isCorrect: true },
+                    { text: "ሥጋ ወደ መለኮት ባሕርይነት ሙሉ በሙሉ ተለውጧል ማለት ነው።", isCorrect: false }
+                ],
+                explanation: "ትክክለኛ አስተምህሮ (የሆነው)፦ 'ከሁለት ባሕርይ አንድ ባሕርይ' መሆን ነው። መለኮትና ሥጋ ሳይቀላቀሉና ሳይለወጡ ፍጹም አንድ አካልና አንድ ባሕርይ (One Incarnate Nature of God the Word) ሆነዋል።"
+            },
+            {
+                id: 42, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የአውጣኪ (Eutychianism) ስሕተት ምን ነበረ? የኦርቶዶክስ ተዋሕዶ ቤተክርስቲያንስ ለምን አወገዘችው?",
+                options: [
+                    { text: "ክርስቶስን ሁለት ባሕርይ ስላለው ነው በማለቱ።", isCorrect: false },
+                    { text: "ሥጋ በመለኮት ተዋጠ/ጠፋ፤ ስለዚህ ክርስቶስ የሰው ባሕርይ የለውም (Monophysitism ስሑት) በማለቱ ፍጹም ሰብአዊነቱን ስላካደ።", isCorrect: true },
+                    { text: "ድንግል ማርያምን አልወለደችም በማለቱ።", isCorrect: false }
+                ],
+                explanation: "አውጣኪ 'የክርስቶስ ሥጋ በመለኮቱ እንደ ውኃ ውስጥ እንደ ወደቀ ማር ጠፍቷል' በማለቱ የክርስቶስን ፍጹም ሰውነት ክዷል። ተዋሕዶ ግን ያለ ማጥፋት ነው።"
+            },
+            {
+                id: 43, level: "Hard", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "በ451 ዓ.ም የተደረገውንና የኦርቶዶክስ ተዋሕዶ አብያተ ክርስቲያናትን (Non-Chalcedonian) ከካቶሊክና ከምሥራቅ ኦርቶዶክስ የለየው ታሪካዊ ጉባኤ የቱ ነው?",
+                options: [
+                    { text: "የኬልቄዶን ጉባኤ (Council of Chalcedon)", isCorrect: true },
+                    { text: "የኒቂያ ጉባኤ", isCorrect: false },
+                    { text: "የጋንግራ ጉባኤ", isCorrect: false }
+                ],
+                explanation: "የኬልቄዶን ጉባኤ ክርስቶስን 'ሁለት ባሕርይ' አለው በማለቱ የእስክንድርያ (የኦርቶዶክስ ተዋሕዶ) ሊቃውንት ሳይቀበሉት ተለይተዋል።"
+            },
+            {
+                id: 44, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በምሥጢረ ሥላሴ ረቂቅ ትንተና 'ዙሪያ መጣጥን' (Perichoresis/Mutual Inhabitation) ማለት ምን ማለት ነው?",
+                options: [
+                    { text: "ሦስቱ አካላት በየተራ አንዱ ሌላውን እየተኩ ይገለጣሉ ማለት ነው።", isCorrect: false },
+                    { text: "አንዱ አካል በሌላው አካል ውስጥ ፍጹም ባለቤት ሆኖ መኖር፤ ሦስቱም አካላት ሳይቀላቀሉ በአንድ ህልውና መኖራቸው።", isCorrect: true },
+                    { text: "ሥላሴ የደረጃ ልዩነት አላቸው ማለት ነው።", isCorrect: false }
+                ],
+                explanation: "Perichoresis ማለት አብ በወልድና በመንፈስ ቅዱስ፣ ወልድ በአብና በመንፈስ ቅዱስ፣ መንፈስ ቅዱስም በአብና በወልድ ውስጥ ያለ መደበላለቅ የመኖራቸው ምሥጢር ነው።"
+            },
+            {
+                id: 45, level: "Hard", category: "canon", categoryAm: "ሥርዓተ ቤተክርስቲያን",
+                question: "የፍትሐ ነገሥት እና የሲኖዶስ ቀኖናዎች 'ሥልጣነ ክህነትን በገንዘብ መግዛት' (Simony) ምን ዓይነት ቅጣት ያስከትላል ይላሉ?",
+                options: [
+                    { text: "ገንዘቡን ለነዳያን ሰጥቶ ክህነቱን ማጽናት ይቻላል።", isCorrect: false },
+                    { text: "የሰጠውም የተቀበለውም ሙሉ በሙሉ ከነክህነታቸው ይወገዛሉ / ይሻራሉ።", isCorrect: true },
+                    { text: "ጊዜያዊ እገዳ ብቻ ይጣላል።", isCorrect: false }
+                ],
+                explanation: "በሐዋርያት ሥራ (ሲሞን መሸንገሉን አስመልክቶ) እንደተደነገገው መንፈሳዊ ሥልጣንን በገንዘብ መሸጥና መግዛት ውግዘትን ያመጣል::"
+            },
+            {
+                id: 46, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የእመቤታችን የቅድስት ማርያምን 'ንጽሕና' (Immaculate Conception) በተመለከተ የካቶሊክና የኦርቶዶክስ ልዩነት ምንድን ነው?",
+                options: [
+                    { text: "ካቶሊኮች ማርያም ከአዳም የቅድመ አያት ኃጢአት (Original sin) ውጭ ተፀነሰች ይላሉ፤ ኦርቶዶክስ ግን የአዳም ዕዳ ነበረባት፤ ነገር ግን በነፃ ፈቃዷና በመንፈስ ቅዱስ ጥበቃ ከበደል ነጽታ ቃለ እግዚአብሔርን ተቀበለች ትላለች።", isCorrect: true },
+                    { text: "ምንም ልዩነት የላቸውም።", isCorrect: false },
+                    { text: "ኦርቶዶክስ ማርያም ኃጢአተኛ ነበረች ትላለች።", isCorrect: false }
+                ],
+                explanation: "የኦርቶዶክስ አስተምህሮ ማርያም እንደ ሰው የአዳም ባሕርይ ውርስ ነበራት፤ ነገር ግን በመንፈስ ቅዱስ ግርማና በራሷ ንጽሕና ተመርጣ እግዚአብሔርን ማደሪያ አደረገች እንጂ 'የማይነካ ፅንሰት' የሚለውን አዲስ የካቶሊክ ዶግማ አትቀበልም።"
+            },
+            {
+                id: 47, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በነገረ መለኮት 'አንትሮፖሞርፊዝም' (Anthropomorphism) ማለት ምን ማለት ነው? በኦርቶዶክስስ እንዴት ይተረጎማል?",
+                options: [
+                    { text: "ለእግዚአብሔር የሰውን ሥጋዊ ቅርጽና አካል በቀጥታ መስጠት።", isCorrect: false },
+                    { text: "ለማይታየውና ረቂቁ እግዚአብሔር የሰውን ባህሪና አካል (ዓይን፣ እጅ) በምሳሌያዊና በሚስጥራዊ አገላለጽ መናገር።", isCorrect: true },
+                    { text: "እግዚአብሔር ሰውን ይመስላል ብሎ ማመን።", isCorrect: false }
+                ],
+                explanation: "መጽሐፍ ቅዱስ 'የእግዚአብሔር እጅ' ሲል ኃይሉን፣ 'ዓይኑ' ሲል ተመልካችነቱን ለመግለጽ በሰው ቋንቋ መናገሩ ነው እንጂ እግዚአብሔር ግዙፍ አካል የለውም።"
+            },
+            {
+                id: 48, level: "Hard", category: "tradition", categoryAm: "ትውፊትና ታሪክ",
+                question: "የአክሱም ጽዮን ማርያም ካቴድራል በታሪክ ውስጥ ሁለት ጊዜ ሙሉ በሙሉ እንዲፈርስ ያደረጉት እነማን ናቸው?",
+                options: [
+                    { text: "ዮዲት ጉዲት (በ10ኛው መ.ክ.ዘ) እና አሕመድ ግራኝ (በ16ኛው መ.ክ.ዘ)", isCorrect: true },
+                    { text: "የሮማውያን ወራሪዎች", isCorrect: false },
+                    { text: "የፋርስ ነገሥታት", isCorrect: false }
+                ],
+                explanation: "ታሪካዊው የአክሱም ማደሪያ በዮዲት ጉዲትና በግራኝ አህመድ ወረራዎች ወቅት ጠፍቶ እንደገና ተሠርቷል።"
+            },
+            {
+                id: 49, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "በክርስቶስ 'መለኮታዊና ሰብአዊ' ተዋሕዶ ውስጥ 'የባሕርያት መለዋወጥ' (Communicatio Idiomatum) ማለት ምን ማለት ነው?",
+                options: [
+                    { text: "መለኮት ወደ ሥጋነት ተቀይሯል ማለት ነው።", isCorrect: false },
+                    { text: "የሥጋ ገንዘብ የሆነው (መራብ፣ መሞት) ለማይሞተው መለኮት፣ የመለኮት ገንዘብ የሆነው (ተአምራት፣ ሕይወት ሰጪነት) ለሥጋ ሆነ፤ ክርስቶስ አንድ አካል በመሆኑ።", isCorrect: true },
+                    { text: "ባሕርያቱ ተቀላቅለው አዲስ ባሕርይ ፈጠሩ ማለት ነው።", isCorrect: false }
+                ],
+                explanation: "ይህ የምሥጢረ ሥጋዌ መሠረት ነው፤ በመዋሐዳቸው ምክንያት የማይሰቃየው መለኮት በሥጋ ተሰቃየ፣ ሥጋም የመለኮትን ክብር ገንዘብ አደረገ ይባላል።"
+            },
+            {
+                id: 50, level: "Hard", category: "dogma", categoryAm: "ትምህርተ ዶግማ",
+                question: "የቅዱሳን 'የጸጋ ስግደት' (Dulia) እና ለእግዚአብሔር የሚቀርበው 'የአምልኮ ስግደት' (Latria) መሠረታዊ ልዩነት ምንድን ነው?",
+                options: [
+                    { text: "ምንም ልዩነት የላቸውም፤ ሁለቱም አንድ ናቸው።", isCorrect: false },
+                    { text: "የአምልኮ ስግደት ለፈጣሪ ለባሕርዩ የሚሰገድ ፍጹም ታማኝነት ሲሆን፤ የጸጋ ስግደት ግን ለቅዱሳን እግዚአብሔር ስላከበራቸው የሚቀርብ የፍቅርና የክብር ሰላምታ/ማክበር ነው።", isCorrect: true },
+                    { text: "የጸጋ ስግደት የሚቀርበው ለመላእክት ብቻ ነው።", isCorrect: false }
+                ],
+                explanation: "ለእግዚአብሔር የምንሰግደው እንደ ፈጣሪነቱ ነው (ማቴ 4:10)። ለቅዱሳንና ለታቦት የሚሰገደው ግን የፈጣሪ ክብርና ቃል ስላለባቸው የጸጋና የማክበር ስግደት ነው (ኢያሱ 7:6)።"
+            }
+        ];
+
+        let userSelectionDatabase = {};
+        let timerReference;
+        let totalAllocatedSeconds = 45 * 60; // 45 Minutes for 50 Questions
+        let finalTimeTakenStr = "00:00";
+
+        // Startup Bootloader Core
+        function initializeAnalyzerEngine() {
+            const injectorNode = document.getElementById('quiz-injector');
+            injectorNode.innerHTML = '';
+            document.getElementById('stat-total').innerText = matrixRepository.length;
+            document.getElementById('user-full-name').value = '';
+
+            matrixRepository.forEach((matrix, index) => {
+                const componentCard = document.createElement('div');
+                componentCard.className = "bg-[#111622] border border-gray-800/80 rounded-2xl p-6 transition-all duration-300 relative overflow-hidden group";
+                componentCard.id = `matrix-card-${matrix.id}`;
+
+                // Category & Level Switcher Color Tags
+                let catColor = "bg-amber-500/10 text-amber-400 border-amber-500/20";
+                if(matrix.category === "canon") catColor = "bg-blue-500/10 text-blue-400 border-blue-500/20";
+                if(matrix.category === "tradition") catColor = "bg-purple-500/10 text-purple-400 border-purple-500/20";
+
+                let lvlColor = "text-emerald-400 bg-emerald-500/5";
+                if(matrix.level === "Medium") lvlColor = "text-orange-400 bg-orange-500/5";
+                if(matrix.level === "Hard") lvlColor = "text-rose-400 bg-rose-500/5 font-bold";
+
+                let optionsBlockHTML = '';
+                matrix.options.forEach((opt, optIdx) => {
+                    optionsBlockHTML += `
+                        <label class="flex items-start p-3.5 rounded-xl border border-gray-800/60 bg-[#0B0F17]/40 cursor-pointer hover:bg-gray-800/40 hover:border-gray-700 transition-all duration-200 group/label relative">
+                            <input type="radio" name="matrix-input-${matrix.id}" value="${optIdx}" class="mt-1 mr-4 h-4 w-4 accent-amber-500 bg-gray-900 border-gray-700 focus:ring-0 focus:ring-offset-0" onchange="registerUserSelection(${matrix.id}, ${optIdx})">
+                            <span class="text-gray-300 text-sm md:text-base group-hover/label:text-white transition-colors leading-relaxed">${opt.text}</span>
+                        </label>
+                    `;
+                });
+
+                componentCard.innerHTML = `
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider border ${catColor}">
+                                ${matrix.categoryAm}
+                            </span>
+                            <span class="px-2 py-0.5 rounded text-[10px] ${lvlColor}">
+                                ${matrix.level}
+                            </span>
+                        </div>
+                        <span class="text-xs text-gray-500 code-font">M-ID #0${matrix.id}</span>
+                    </div>
+                    <h3 class="text-base sm:text-lg font-bold text-white mb-5 leading-snug">
+                        <span class="text-amber-500 code-font mr-1">${index + 1}.</span> ${matrix.question}
+                    </h3>
+                    <div class="space-y-3">${optionsBlockHTML}</div>
+                    
+                    <!-- Dynamic Insight Alert Box (Hidden Initially) -->
+                    <div id="insight-${matrix.id}" class="mt-5 p-4 rounded-xl border text-sm leading-relaxed hidden">
+                        <div class="font-bold mb-1 flex items-center space-x-2">
+                            <span id="insight-badge-${matrix.id}"></span>
+                            <span id="insight-title-${matrix.id}"></span>
+                        </div>
+                        <p class="text-gray-300">${matrix.explanation}</p>
+                    </div>
+                `;
+                injectorNode.appendChild(componentCard);
+            });
+
+            updateGlobalCounters();
+            startTimerSystem(totalAllocatedSeconds); 
+        }
+
+        function registerUserSelection(matrixId, chosenOptionIdx) {
+            userSelectionDatabase[matrixId] = chosenOptionIdx;
+            updateGlobalCounters();
+        }
+
+        function updateGlobalCounters() {
+            const answeredCount = Object.keys(userSelectionDatabase).length;
+            document.getElementById('stat-answered').innerText = answeredCount;
+        }
+
+        function startTimerSystem(durationSeconds) {
+            clearInterval(timerReference);
+            let timeRemaining = durationSeconds;
+            const timerNode = document.getElementById('stat-timer');
+
+            timerReference = setInterval(() => {
+                let mins = parseInt(timeRemaining / 60, 10);
+                let secs = parseInt(timeRemaining % 60, 10);
+
+                let displayMins = mins < 10 ? "0" + mins : mins;
+                let displaySecs = secs < 10 ? "0" + secs : secs;
+
+                timerNode.innerText = `${displayMins}:${displaySecs}`;
+
+                let takenSeconds = durationSeconds - timeRemaining;
+                let takenMins = parseInt(takenSeconds / 60, 10);
+                let takenSecs = parseInt(takenSeconds % 60, 10);
+                finalTimeTakenStr = `${takenMins < 10 ? "0" + takenMins : takenMins}:${takenSecs < 10 ? "0" + takenSecs : takenSecs}`;
+
+                if (--timeRemaining < 0) {
+                    clearInterval(timerReference);
+                    timerNode.innerText = "00:00";
+                    evaluateUserMetrics();
+                }
+            }, 1000);
+        }
+
+        function evaluateUserMetrics() {
+            const userNameInput = document.getElementById('user-full-name').value.trim();
+            
+            if (!userNameInput) {
+                alert("🔴 እባክዎ መጀመሪያ ሙሉ ስምዎን ያስገቡ!");
+                document.getElementById('user-full-name').focus();
+                return;
+            }
+
+            const totalElements = matrixRepository.length;
+            const selectedSize = Object.keys(userSelectionDatabase).length;
+
+            if (selectedSize < totalElements) {
+                alert("🔴 እባክዎ ሁሉንም የማትሪክስ ጥያቄዎች ይመልሱ! የቀሩ ጥያቄዎች፦ " + (totalElements - selectedSize));
+                return;
+            }
+
+            clearInterval(timerReference);
+
+            let absoluteScore = 0;
+            let categoriesScores = { dogma: { correct: 0, total: 0 }, canon: { correct: 0, total: 0 }, tradition: { correct: 0, total: 0 } };
+
+            matrixRepository.forEach(matrix => {
+                const selectedCard = document.getElementById(`matrix-card-${matrix.id}`);
+                const chosenIdx = userSelectionDatabase[matrix.id];
+                const isCorrect = matrix.options[chosenIdx].isCorrect;
+
+                categoriesScores[matrix.category].total++;
+                if (isCorrect) {
+                    absoluteScore++;
+                    categoriesScores[matrix.category].correct++;
+                }
+
+                const inputs = selectedCard.querySelectorAll(`input[name="matrix-input-${matrix.id}"]`);
+                inputs.forEach(i => i.disabled = true);
+
+                const insightBox = document.getElementById(`insight-${matrix.id}`);
+                const insightBadge = document.getElementById(`insight-badge-${matrix.id}`);
+                const insightTitle = document.getElementById(`insight-title-${matrix.id}`);
+
+                insightBox.classList.remove('hidden');
+
+                if (isCorrect) {
+                    selectedCard.classList.add('border-emerald-500/50', 'glow-green', 'bg-emerald-950/10');
+                    insightBox.classList.add('bg-emerald-500/10', 'border-emerald-500/30', 'text-emerald-400');
+                    insightBadge.innerText = "✓";
+                    insightTitle.innerText = "ትክክለኛ ምልከታ";
+                } else {
+                    selectedCard.classList.add('border-rose-500/50', 'glow-red', 'bg-rose-950/10');
+                    insightBox.classList.add('bg-rose-500/10', 'border-rose-500/30', 'text-rose-400');
+                    insightBadge.innerText = "✕";
+                    insightTitle.innerText = "የተሳሳተ ምልከታ";
+                }
+            });
+
+            document.getElementById('stat-correct').innerText = absoluteScore;
+            const absolutePercentage = Math.round((absoluteScore / totalElements) * 100);
+            document.getElementById('score-percent').innerText = `${absolutePercentage}%`;
+            document.getElementById('score-raw-text').innerText = `ከ ${totalElements} የሙከራ ጥያቄዎች ውስጥ ${absoluteScore} ምርጫዎችን በትክክል ለይተዋል።`;
+            document.getElementById('dashboard-user-greeting').innerText = `ውድ ${userNameInput}፣ በ 50 የኦርቶዶክስ ተዋሕዶ ዶግማ፣ ሥርዓት እና ታሪክ ምዘናዎች መሠረት የእርስዎ አጠቃላይ ውጤት እንደሚከተለው ተሰልቷል።`;
+
+            const dogmaPct = Math.round((categoriesScores.dogma.correct / categoriesScores.dogma.total) * 100) || 0;
+            const canonPct = Math.round((categoriesScores.canon.correct / categoriesScores.canon.total) * 100) || 0;
+            const tradPct = Math.round((categoriesScores.tradition.correct / categoriesScores.tradition.total) * 100) || 0;
+
+            document.getElementById('cat-dogma-val').innerText = `${dogmaPct}%`;
+            document.getElementById('cat-dogma-bar').style.width = `${dogmaPct}%`;
+            document.getElementById('cat-canon-val').innerText = `${canonPct}%`;
+            document.getElementById('cat-canon-bar').style.width = `${canonPct}%`;
+            document.getElementById('cat-trad-val').innerText = `${tradPct}%`;
+            document.getElementById('cat-trad-bar').style.width = `${tradPct}%`;
+
+            let badgeTitle = "ጀማሪ መርማሪ (Novice Seeker)";
+            let badgeEmoji = "📚";
+            const badgeEmojiNode = document.getElementById('badge-emoji');
+            const badgeTitleNode = document.getElementById('badge-title');
+            const badgeDescNode = document.getElementById('badge-desc');
+            const dashIconNode = document.getElementById('dashboard-icon');
+
+            if (absolutePercentage === 100) {
+                badgeEmoji = "👑"; badgeTitle = "ሊቅ (Doctor of Theology)";
+                badgeDescNode.innerText = "ድንቅ ነው! የ 50ቱንም ጥያቄዎች ረቂቅ አስተምህሮ ፍጹም በሆነ የነቃ እውቀት ለይተው አውቀዋል።";
+                dashIconNode.innerText = "🏆";
+            } else if (absolutePercentage >= 85) {
+                badgeEmoji = "🥇"; badgeTitle = "የበሰለ መርማሪ (Advanced Scholar)";
+                badgeDescNode.innerText = "እጅግ በጣም የላቀ ዕውቀት! የከበዱትን የነገረ መለኮትና የባሕርይ ተዋሕዶ ምሥጢራት በሚገባ ተረድተዋል።";
+                dashIconNode.innerText = "🌟";
+            } else if (absolutePercentage >= 60) {
+                badgeEmoji = "⚡"; badgeTitle = "ተጋዳይ ተማሪ (Intermediate Disciple)";
+                badgeDescNode.innerText = "ጥሩ እውቀት። ይሁንና አንዳንድ የደረጃ 3 (Hard) የነገረ መለኮት ልዩነቶችን ለማጥራት መጻሕፍትን ደግመው ቢያነቡ መልካም ነው።";
+                dashIconNode.innerText = "⚡";
+            } else {
+                badgeEmoji = "📚"; badgeTitle = "ጀማሪ መርማሪ (Novice Seeker)";
+                badgeDescNode.innerText = "መሠረታዊ የሆኑ የቤተክርስቲያን ቀጥተኛ ትምህርቶችንና የዶግማ አወቃቀሮችን በደንብ ማጥናትና መለየት ያስፈልግዎታል።";
+                dashIconNode.innerText = "📚";
+            }
+            badgeEmojiNode.innerText = badgeEmoji;
+            badgeTitleNode.innerText = badgeTitle;
+
+            const dashboard = document.getElementById('analytics-dashboard');
+            dashboard.classList.remove('hidden');
+            document.getElementById('action-zone').classList.add('hidden');
+
+            sendMetricsToTelegram(userNameInput, absoluteScore, totalElements, absolutePercentage, badgeTitle, dogmaPct, canonPct, tradPct);
+
+            dashboard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function sendMetricsToTelegram(name, score, total, percent, rank, dogma, canon, trad) {
+            const textPayload = `📊 *Tinishu FaithMap - 50 ጥያቄዎች የውጤት ሪፖርት* \n\n` +
+                                `👤 *ተፈታኝ:* ${name}\n` +
+                                `⏱️ *የፈጀበት ጊዜ:* ${finalTimeTakenStr} ደቂቃ\n` +
+                                `🎯 *ውጤት:* ${score}/${total} (${percent}%)\n` +
+                                `🏅 *የዕውቀት ማዕረግ:* ${rank}\n\n` +
+                                `📈 *የይዘት ክፍፍል ትንተና፦*\n` +
+                                `• ትምህርተ ዶግማ: ${dogma}%\n` +
+                                `• ሥርዓተ ቤተክርስቲያን: ${canon}%\n` +
+                                `• ትውፊትና ታሪክ: ${trad}%\n\n` +
+                                `_• ባለ 3 ደረጃ የክብደት ማትሪክስ ውጤት_`;
+
+            const requestUrl = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+            
+            fetch(requestUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: textPayload,
+                    parse_mode: 'Markdown'
+                })
+            })
+            .then(response => {
+                if(!response.ok) throw new Error('Network payload failure context.');
+                console.log('Metrics successfully mirrored to destination Telegram terminal.');
+            })
+            .catch(err => {
+                console.error('Telegram API Dispatch error: ', err);
+            });
+        }
+
+        function rebootAnalyzerEngine() {
+            userSelectionDatabase = {};
+            document.getElementById('analytics-dashboard').classList.add('hidden');
+            document.getElementById('action-zone').classList.remove('hidden');
+            initializeAnalyzerEngine();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onload = initializeAnalyzerEngine;
+    </script>
+</body>
+</html>
